@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,161 +19,170 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-body{
+
+body {
 	font-family: 'Nunito Sans', sans-serif;
-	margin-top: 80px;
-	
-		
+	padding-top: 80px;
+	background-color: antiquewhite;
+	/* para imagens de fundo */
+	background-image: url("../mancha.png");
+	background-size: 200px;
+
+
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family:'Libre Baskerville', serif; 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Libre Baskerville', serif;
 	color: rgb(0, 0, 0);
 }
 
-p{ 
+p {
 	color: rgb(0, 0, 0);
 	margin: 10px;
 	font-size: 1.25rem;
 }
 
-img{
+img {
 
 	width: 100%;
 
-	
+
 }
- .conteudo-home{
-    
+
+.conteudo-home {
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	
- }
 
- .box{
-     margin-bottom: 12px;
-	 padding: 10px;
-	 width: 46%;
-	 background-color: honeydew;
- }
+}
 
- .box figure{
+.box {
+	margin-bottom: 12px;
+	padding: 10px;
+	width: 46%;
+	background-color: honeydew;
+}
+
+.box figure {
 
 	height: 220px;
 	/* ele esconde o conteudo que saiu da caixa */
 	overflow: hidden;
 	border: #000 solid 1px;
- 
+
 }
 
 
- .conteudo, .conteudo-home{
+.conteudo, .conteudo-home {
 
 	width: 70%;
 	padding: 10px;
 	background-color: rgb(250, 238, 173);
 
- }
-main{
-     display: flex;
-	 /* vh corresponde a porcentagem da tela do dispositivo, 
+}
+
+main {
+	display: flex;
+	/* vh corresponde a porcentagem da tela do dispositivo, 
 	 90vh = 90% da altura da tela */
 	min-height: 80vh;
 	justify-content: space-between;
 	width: 90%;
 	margin: 0% auto;
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
-aside{
-    
-	 width: 25%;
-	 background-color: rgb(248, 250, 193);
-	 padding: 10px;
+aside {
+
+	width: 25%;
+	background-color: rgb(248, 250, 193);
+	padding: 10px;
 
 }
 
 
-header{
+header {
 	position: fixed;
 	top: 0;
-	
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0 10px 0;
 	background-color: #d8d6d4;
 	box-shadow: #000 0 5px 5px;
-	
-}
-
-nav ul li a{
-			 text-decoration: none;
-			 background-color: rgb(0, 0, 0);
-			 color: rgb(250, 248, 248);
-			 /* text-indent: 40px; */
-			 line-height: 30px;
-		 }
-		 
-
-
-
-		 nav ul li, nav ul li a{
-			 display: inline-block;
-			 width: fit-content;
-			 height: 30px;
-			 margin-bottom: 4px;
-			 padding: 8px;
-		 }
-		 
-
-        nav ul{
-			padding: 0;
-			list-style-type: none;
-			text-align: right;
-			
-		 }
-
-  header nav{
-        width: 70%;
-		text-align: center;
 
 }
 
-   header h1{
-      width: 25%;
+nav ul li a {
+	text-decoration: none;
+	background-color: rgb(0, 0, 0);
+	color: rgb(250, 248, 248);
+	/* text-indent: 40px; */
+	line-height: 30px;
 
- 
-    padding: 10px;
+}
+
+
+
+
+nav ul li, nav ul li a {
+	display: inline-block;
+	width: fit-content;
+	height: 30px;
+	margin-bottom: 4px;
+	padding: 8px;
+}
+
+
+nav ul {
+	padding: 5px;
+	list-style-type: none;
+	text-align: right;
+
+}
+
+header nav {
+	width: 70%;
+	text-align: center;
+
+}
+
+header h1 {
+	padding: 10px;
 	width: 70%;
 	background-color: #d8d6d4;
 }
 
 
 
-.conteudo{
+.conteudo {
 	padding: 10px;
 	width: 70%;
 	background-color: rgb(245, 245, 164);
 }
 
-.ico-logo{
-	width: 20px;
+.ico-logo {
+	width: 50px;
 	margin: 0 20px 0 0;
-} 
+	color: rgb(13, 14, 13);
+	
+}
 
-.modal{
+.modal {
 	position: fixed;
 	top: 20%;
 	right: 0;
+	/* o position sempre vai ser acompanhado com o top e right ou left	 */
+
 	width: 200px;
 	padding: 10px;
 	background-color: rgb(255, 251, 0);
 	border: #f90;
 }
-.modal .fechar{
+
+.modal .fechar {
 	position: absolute;
 	right: 10px;
 	top: 4px;
@@ -184,11 +193,82 @@ nav ul li a{
 	text-align: center;
 }
 
+.menu-burger {
+	display: none;
+	/* para não aparecer o icone na tela grande, so em celular ou tablet	 */
+}
 
-		
-   #img-mae{
+.menu-phone{
+
+	display: none;
+}
+
+
+
+#img-mae {
 
 	margin-top: -80px;
-   }
+}
 
 
+/* layout para tablet e celulares  */
+
+/* se tiver (min) nao tem um limite para a tela */
+@media only screen and (max-width: 992px) {
+
+	main {
+		flex-direction: column-reverse;
+	}
+
+	aside, .conteudo, .conteudo-home {
+		width: 100%;
+	}
+
+	nav {
+		/* nao vai aparecer a navegação no celular */
+		display: none;
+	}
+
+	header h1 {
+		font-size: 3rem;
+		width: 60%;
+	}
+
+	header {
+		padding: 0;
+		height: 100px;
+	}
+
+	.menu-burger {
+		width: 90px;
+		display: block;
+		cursor: pointer;
+
+	}
+
+	.menu-phone{
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 50%;
+		padding: 10px;
+		background-color: #fff;
+		z-index: 1000;
+		
+	}
+	.menu-phone ul{
+		padding: 0;
+		list-style: none;
+	}
+	.menu-phone ul li, .menu-phone ul li a{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		margin-bottom: 2px;
+		text-indent: 10px;
+	}
+
+}
