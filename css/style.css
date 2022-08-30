@@ -144,7 +144,7 @@ nav ul {
 }
 
 header nav {
-	width: 70%;
+	width: 100%;
 	text-align: center;
 
 }
@@ -255,7 +255,7 @@ header h1 {
 		padding: 10px;
 		background-color: #fff;
 		z-index: 1000;
-		
+
 	}
 	.menu-phone ul{
 		padding: 0;
