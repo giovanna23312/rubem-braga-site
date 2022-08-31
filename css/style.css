@@ -70,14 +70,15 @@ img {
 	height: 220px;
 	/* ele esconde o conteudo que saiu da caixa */
 	overflow: hidden;
-	border: #000 solid 1px;
+	/* border: #000 solid 1px; */
+	border: #000 solid 1px; 
 
 }
 
 
 .conteudo, .conteudo-home {
 
-	width: 70%;
+	width: 100%;
 	padding: 10px;
 	background-color: rgb(250, 238, 173);
 
@@ -204,11 +205,19 @@ header h1 {
 	display: none;
 }
 
+#img-escrevendo{
+      
+	margin-top: 10px;
+}
 
 
 #img-mae {
 
-	margin-top: -80px;
+	margin-top: -50px;
+}
+
+#img-ingles{
+	margin-top: 15px;
 }
 
 #btFechar {
@@ -235,7 +244,6 @@ header h1 {
 	}
 
 	header h1 {
-		font-size: 3rem;
 		width: 60%;
 	}
 
@@ -256,7 +264,7 @@ header h1 {
 		top: 0;
 		width: 50%;
 		padding: 10px;
-		background-color: #fff;
+		background-color: rgb(255, 255, 255);
 		
 	}
 	.menu-phone ul{
@@ -269,8 +277,13 @@ header h1 {
 		margin: 0;
 		padding: 0;
 		text-align: left;
-		margin-bottom: 2px;
-		text-indent: 10px;
+		margin-bottom: 10px;
+		text-indent: 5px;
 	}
+
+	.box{
+		width: 100%;
+	}
+
 
 }
