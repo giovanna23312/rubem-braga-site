@@ -25,5 +25,6 @@ btHamburger.addEventListener('click', function(){
 })
 
 FecharPhone.addEventListener('click', function(){
-    navPhone.style.display = 'none'
+        navPhone.style.display = 'none'
+
 })
