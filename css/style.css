@@ -232,11 +232,18 @@ header h1 {
 
 	main {
 		flex-direction: column-reverse;
+		width: 100%;
 	}
 
 	aside, .conteudo, .conteudo-home {
 		width: 100%;
 	}
+
+	.conteudo{
+		width: 100%;
+		margin-right: 70px;
+	}
+	
 
 	nav {
 		/* nao vai aparecer a navegação no celular */
